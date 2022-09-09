@@ -1,0 +1,44 @@
+:root{
+    --h_szin: #EFEEFE;
+    --k_szin: #8F8FCF;
+    --h1_szin: #F4F5FE;
+    --h1_b_szin: #690081;
+}
+
+main{
+    background: var(--h_szin);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid var(--k_szin);
+    box-shadow: 2px 2px 2px;
+    border-radius: 10px;
+}
+
+h1{
+    padding: 5px 15px;
+    text-align: center;
+    background: var(--h1_szin);
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    /*border: 1px solid var(--k_szin);*/
+    box-shadow: 2px 2px 2px;
+    color: var(--h1_b_szin);
+}
+
+p{
+    margin-left: 100px;
+}
+
+input[type="button"]{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    /*height: 25px;*/
+    border-radius: 5px;
+    border-color: var(--k_szin);
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 110%;
+}
