@@ -62,5 +62,20 @@ function szamol(sik) {
             let s = hsz_k / 2;
             document.getElementById('hszog_t').value = Math.round(Math.sqrt(s * (s - hsz_a) * (s - hsz_b) * (s - hsz_c)) * 10) / 10;
             break;
+        case 'negyzet':
+            let negyzet_a = document.getElementById('negyszog_a').value;
+
+            /* Kerület számitás */
+            document.getElementById('negyszog_k').value = 4 * negyzet_a;
+            /* Terület számitás */
+            document.getElementById('negyszog_t').value = Math.pow(negyzet_a, 2);
+            break;
+        case 'hatszog':
+            let hatsz_a = document.getElementById('hatszog_a').value;
+
+            /* Kerület számitás */
+            document.getElementById('hatszog_k').value = 6 * hatsz_a;
+            /* Terület számitás */
+            document.getElementById('hatszog_t').value = Math.round((3 / 2) * Math.pow(hatsz_a, 2) * Math.sqrt(3) * 10) / 10;
     }
 }
