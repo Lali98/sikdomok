@@ -8,27 +8,118 @@
 </head>
 <body>
 <main>
-    <form>
+    <nav>
+        <span class="nav-item" onclick="valt('teglalap')">Téglalap</span>
+        <span class="nav-item" onclick="valt('kor')">Kör</span>
+        <span class="nav-item" onclick="valt('hszog')">Háromszög</span>
+        <span class="nav-item" onclick="valt('negyzet')">Négyzet</span>
+        <span class="nav-item" onclick="valt('hatszog')">Hatszög</span>
+    </nav>
+    <form id="teglalap">
         <h1>A téglalap</h1>
         <h2>Kiindulási adatok</h2>
-        <p >
-            <label for="a">"a" oldal hossza:</label>
-            <input type="number" id="a"> cm
+        <p>
+            <label for="teglap_a">"a" oldal hossza:</label>
+            <input type="number" id="teglap_a"> cm
         </p>
         <p>
             <label for="b">"b" oldal hossza:</label>
-            <input type="number" id="b"> cm
+            <input type="number" id="teglap_b"> cm
         </p>
         <input type="button" value="Számol" onclick="t_szamol()">
         <hr>
         <h2>Eredmények</h2>
         <p>
-            <label for="k">Kerület:</label>
-            <input type="number" id="k" readonly> cm
+            <label for="teglap_k">Kerület:</label>
+            <input type="number" id="teglap_k" readonly> cm
         </p>
         <p>
-            <label for="t">Terület:</label>
-            <input type="number" id="t" readonly> cm<sup>2</sup>
+            <label for="teglap_t">Terület:</label>
+            <input type="number" id="teglap_t" readonly> cm<sup>2</sup>
+        </p>
+    </form>
+    <form id="kor">
+        <h1>A kör</h1>
+        <h2>Kiindulási adatok</h2>
+        <p>
+            <label for="r">"r" hossza:</label>
+            <input type="number" id="r"> cm
+        </p>
+        <input type="button" value="Számol" onclick="szamol('kor')">
+        <hr>
+        <h2>Eredmények</h2>
+        <p>
+            <label for="kor_k">Kerület:</label>
+            <input type="number" id="kor_k" readonly> cm
+        </p>
+        <p>
+            <label for="kor_t">Terület:</label>
+            <input type="number" id="kor_t" readonly> cm<sup>2</sup>
+        </p>
+    </form>
+    <form id="hszog">
+        <h1>A háromszög</h1>
+        <h2>Kiindulási adatok</h2>
+        <p>
+            <label for="hszog_a">"a" oldal hossza:</label>
+            <input type="number" id="hszog_a"> cm
+        </p>
+        <p>
+            <label for="hszog_b">"b" oldal hossza:</label>
+            <input type="number" id="hszog_b"> cm
+        </p>
+        <p>
+            <label for="hszog_c">"c" oldal hossza:</label>
+            <input type="number" id="hszog_c"> cm
+        </p>
+        <input type="button" value="Számol" onclick="szamol('hszog')">
+        <hr>
+        <h2>Eredmények</h2>
+        <p>
+            <label for="hszog_k">Kerület:</label>
+            <input type="number" id="hszog_k" readonly> cm
+        </p>
+        <p>
+            <label for="hszog_t">Terület:</label>
+            <input type="number" id="hszog_t" readonly> cm<sup>2</sup>
+        </p>
+    </form>
+    <form id="negyzet">
+        <h1>A négyzet</h1>
+        <h2>Kiindulási adatok</h2>
+        <p>
+            <label for="negyszog_a">"a" oldal hossza:</label>
+            <input type="number" id="negyszog_a"> cm
+        </p>
+        <input type="button" value="Számol" onclick="t_szamol()">
+        <hr>
+        <h2>Eredmények</h2>
+        <p>
+            <label for="negyszog_k">Kerület:</label>
+            <input type="number" id="negyszog_k" readonly> cm
+        </p>
+        <p>
+            <label for="negyszog_t">Terület:</label>
+            <input type="number" id="negyszog_t" readonly> cm<sup>2</sup>
+        </p>
+    </form>
+    <form id="hatszog">
+        <h1>A szabályos hatszög</h1>
+        <h2>Kiindulási adatok</h2>
+        <p>
+            <label for="hatszog_a">"a" oldal hossza:</label>
+            <input type="number" id="hatszog_a"> cm
+        </p>
+        <input type="button" value="Számol" onclick="t_szamol()">
+        <hr>
+        <h2>Eredmények</h2>
+        <p>
+            <label for="hatszog_k">Kerület:</label>
+            <input type="number" id="hatszog_k" readonly> cm
+        </p>
+        <p>
+            <label for="hatszog_t">Terület:</label>
+            <input type="number" id="hatszog_t" readonly> cm<sup>2</sup>
         </p>
     </form>
 </main>

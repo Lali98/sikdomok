@@ -5,7 +5,11 @@
     --h1_b_szin: #690081;
 }
 
-main{
+body{
+    margin: 0;
+}
+
+form{
     background: var(--h_szin);
     max-width: 800px;
     margin: 0 auto;
@@ -13,6 +17,10 @@ main{
     border: 1px solid var(--k_szin);
     box-shadow: 2px 2px 2px;
     border-radius: 10px;
+}
+
+form:not(#teglalap){
+    display: none;
 }
 
 h1{
@@ -41,4 +49,27 @@ input[type="button"]{
     box-shadow: none;
     font-weight: bold;
     font-size: 110%;
+}
+
+#kor{
+    display: none;
+}
+
+nav{
+    background: rgb(105, 56, 238);
+    cursor: pointer;
+}
+
+.nav-item{
+    display: inline-block;
+    padding: 20px;
+    width: 80px;
+    text-align: center;
+    color: lightgray;
+}
+
+.nav-item:hover{
+    background: rgb(149, 109, 248);
+    color: white;
+    transition: .5s;
 }
