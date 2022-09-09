@@ -77,5 +77,6 @@ function szamol(sik) {
             document.getElementById('hatszog_k').value = 6 * hatsz_a;
             /* Terület számitás */
             document.getElementById('hatszog_t').value = Math.round((3 / 2) * Math.pow(hatsz_a, 2) * Math.sqrt(3) * 10) / 10;
+            break;
     }
 }
